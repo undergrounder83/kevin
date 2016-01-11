@@ -3,4 +3,6 @@ from bs4 import BeautifulSoup
 
 r = requests.get("https://www.airbnb.com)
 
-print r.content
+soup = BeautifulSoup(r.content)
+
+print soup.prettify()
